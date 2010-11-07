@@ -1,0 +1,8 @@
+models/mapobjects/persian/per_pillars1a
+{
+    qer_editorimage    models/mapobjects/persian/per_pillar1.png
+    
+	diffusemap         models/mapobjects/persian/per_pillar1.png
+	specularmap	    	models/mapobjects/persian/per_pillar1_s.png
+	bumpmap            models/mapobjects/persian/per_pillar1_nm.png
+}
