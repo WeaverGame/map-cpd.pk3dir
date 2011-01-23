@@ -1,0 +1,17 @@
+models/mapobjects/cpd/bricks1
+{
+    qer_editorimage    models/mapobjects/cpd/bricks1.png
+    
+	diffusemap         models/mapobjects/cpd/bricks1.png
+	specularmap	    	models/mapobjects/cpd/bricks1_s.png
+	bumpmap            models/mapobjects/cpd/bricks1_nm.png
+}
+
+models/mapobjects/cpd/trims
+{
+    qer_editorimage    models/mapobjects/cpd/trims.png
+    
+	diffusemap         models/mapobjects/cpd/trims.png
+	specularmap	    	models/mapobjects/cpd/trims_s.png
+	bumpmap            models/mapobjects/cpd/trims_nm.png
+}
