@@ -1,8 +1,3 @@
--- constants
-TEAM_FREE = 0
-TEAM_RED = 1
-TEAM_BLUE = 2
-
 -- printf wrapper
 function et.G_Printf(...)
 	et.G_Print(string.format(unpack(arg)))
