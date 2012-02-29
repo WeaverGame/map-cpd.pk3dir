@@ -7,6 +7,31 @@ models/mapobjects/cpd/bricks1
 	bumpmap            models/mapobjects/cpd/bricks1_nm.png
 }
 
+models/mapobjects/cpd/objective
+{
+    qer_editorimage    models/mapobjects/cpd/objective.png
+    
+	diffusemap         models/mapobjects/cpd/objective.png
+	specularmap	    	models/mapobjects/cpd/objective.png
+	bumpmap            models/mapobjects/cpd/objective_nm.png
+}
+
+models/mapobjects/cpd/objective_fx
+{
+	qer_editorImage		models/mapobjects/cpd/objective_fx.png
+	nonsolid
+	noshadows
+	translucent
+	deformVertexes wave 30 sin 0 8 0 .2 
+	twosided
+	
+	{
+		map		models/mapobjects/cpd/objective_fx.png
+		tcmod scroll 0 -0.2
+		blend add
+	}  
+}
+
 models/mapobjects/cpd/trims
 {
     qer_editorimage    models/mapobjects/cpd/trims.png
