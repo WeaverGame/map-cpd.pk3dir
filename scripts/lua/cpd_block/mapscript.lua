@@ -42,20 +42,20 @@ function FPGateHurt(self, inflictor, attacker)
 		return 0
 	end
 	FPGateHurtLast = game.Leveltime()
-	et.G_Printf("The Upper Door is taking damage!\n")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The Upper Door is taking damage!")
 end
 
 function FPGateShieldTrigger(self, other)
-	et.G_Printf("The Upper Door Shield has dissolved!\n")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The Upper Door Shield has dissolved!")
 end
 
 function FPGateTrigger(self, other)
-	et.G_Printf("The Upper Door has been destroyed!\n")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The Upper Door has been destroyed!")
 	PhaseOne_End()
 end
 
 function PhaseOne_End()
-	et.G_Printf("The Lower Fortress has fallen!\n")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The Lower Fortress has fallen!")
 	
 	spawnGroupRed = 2
 	game.SpawnGroup(TEAM_RED, 1, 0)
@@ -77,20 +77,20 @@ function UCGateHurt(self, inflictor, attacker)
 		return 0
 	end
 	UCGateHurtLast = game.Leveltime()
-	et.G_Printf("The Upper Citadel Gate is taking damage!\n")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The Upper Citadel Gate is taking damage!")
 end
 
 function UCGateShieldTrigger(self, other)
-	et.G_Printf("The Upper Citadel Gate Shield has dissolved!\n")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The Upper Citadel Gate Shield has dissolved!")
 end
 
 function UCGateTrigger(self, other)
-	et.G_Printf("The Upper Citadel Gate has been destroyed!\n")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The Upper Citadel Gate has been destroyed!")
 	PhaseTwo_End()
 end
 
 function PhaseTwo_End()
-	et.G_Printf("The Lower Fortress has fallen!\n")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The Lower Fortress has fallen!")
 	
 	spawnGroupRed = 3
 	game.SpawnGroup(TEAM_RED, 1, 0)
@@ -106,12 +106,12 @@ end
 -- Final objective
 -- Flag
 function EOShieldTrigger(self, other)
-	et.G_Printf("The Final Objective Shield has dissolved!\n")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The Final Objective Shield has dissolved!")
 end
 
 function CapFlagUse(self, other, activator)
-	et.G_Printf("Objective Captured!\n")
-	et.G_Print("Blue team is the winner\n")
+	game.ObjectiveAnnounce(TEAM_BLUE, "Objective Captured!")
+	et.G_Print("Blue team completed the objective.\n")
 	game.SetWinner(TEAM_BLUE)
 	et.G_Print("Ending the round\n")
 	game.EndRound()
