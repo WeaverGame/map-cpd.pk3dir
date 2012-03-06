@@ -2039,7 +2039,6 @@ DarkRadiant Map Information File Version 2
 		Node { 1 } // primitive (Brush)
 		Node { 1 } // primitive (Brush)
 		Node { 1 } // entity (info_player_deathmatch_1)
-		Node { 1 } // entity (info_player_deathmatch_3)
 		Node { 1 } // entity (team_ctf_bluespawn_1)
 		Node { 1 } // entity (team_ctf_bluespawn_3)
 		Node { 1 } // entity (team_ctf_bluespawn_4)
@@ -5566,7 +5565,6 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // entity (light_146)
 		Node { 0 } // entity (func_static_1405)
 		Node { 0 } // entity (light_147)
-		Node { 0 } // entity (func_static_1406)
 		Node { 0 } // entity (func_static_1409)
 		Node { 0 } // entity (func_static_1410)
 		Node { 0 } // entity (func_static_1411)
@@ -6194,5 +6192,8 @@ DarkRadiant Map Information File Version 2
 		Node { 0 } // primitive (Brush)
 		Node { 0 } // primitive (Brush)
 		Node { 0 } // primitive (Brush)
+		Node { 0 } // entity (func_explosive_3)
+		Node { 0 } // primitive (Brush)
+		Node { 0 } // entity (func_mover_3198)
 	}
 }
