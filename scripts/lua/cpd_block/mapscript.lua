@@ -109,8 +109,8 @@ function EOShieldTrigger(self, other)
 	game.ObjectiveAnnounce(TEAM_BLUE, "The Final Objective Shield has dissolved!")
 end
 
-function CapFlagUse(self, other, activator)
-	game.ObjectiveAnnounce(TEAM_BLUE, "Objective Captured!")
+function FOBallExplosiveTrigger(self, other)
+	game.ObjectiveAnnounce(TEAM_BLUE, "Objective Destroyed!")
 	et.G_Print("Blue team completed the objective.\n")
 	game.SetWinner(TEAM_BLUE)
 	et.G_Print("Ending the round\n")
