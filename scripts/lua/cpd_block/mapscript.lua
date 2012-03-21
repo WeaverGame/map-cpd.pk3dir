@@ -26,11 +26,6 @@ function et_InitGame( levelTime, randomSeed, restart )
 	
 	game.SetDefender(TEAM_RED)	--Red is defending
 	game.SetTimeLimit(15)		--15 min
-	
-	LTFFlagOwner = TEAM_RED
-	HallsFlagLocked = 1
-	UCGFlagOwner = TEAM_FREE
-	UCGFlagLocked = 1
 end
 
 --First Phase
@@ -42,15 +37,15 @@ function FPGateHurt(self, inflictor, attacker)
 		return 0
 	end
 	FPGateHurtLast = game.Leveltime()
-	game.ObjectiveAnnounce(TEAM_BLUE, "The Upper Door is taking damage!")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The First Door is taking damage!")
 end
 
 function FPGateShieldTrigger(self, other)
-	game.ObjectiveAnnounce(TEAM_BLUE, "The Upper Door Shield has dissolved!")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The First Door Shield has dissolved!")
 end
 
 function FPGateTrigger(self, other)
-	game.ObjectiveAnnounce(TEAM_BLUE, "The Upper Door has been destroyed!")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The First Door has been destroyed!")
 	PhaseOne_End()
 end
 
@@ -67,7 +62,6 @@ function PhaseOne_End()
 	game.SpawnGroup(TEAM_BLUE, 2, 1)
 	game.SpawnGroup(TEAM_BLUE, 3, 0)
 end
-
 
 --Upper Citadel
 --Gate
@@ -90,7 +84,7 @@ function UCGateTrigger(self, other)
 end
 
 function PhaseTwo_End()
-	game.ObjectiveAnnounce(TEAM_BLUE, "The Lower Fortress has fallen!")
+	game.ObjectiveAnnounce(TEAM_BLUE, "The Middle Halls have fallen!")
 	
 	spawnGroupRed = 3
 	game.SpawnGroup(TEAM_RED, 1, 0)
